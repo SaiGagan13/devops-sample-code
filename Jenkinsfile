@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Creating virtual environment and installing dependencies...'
-                // In this lab we are not actually creating venv or running pip here
+                // Skipping venv/pip for this lab (we'll install python libs in container)
             }
         }
         stage('Test') {
@@ -51,3 +51,4 @@ pipeline {
         }
     }
 }
+
